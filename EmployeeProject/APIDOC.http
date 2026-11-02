@@ -1,0 +1,34 @@
+###
+GET http://127.0.0.1:8000/employees/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/add-employee/
+Content-Type: application/json
+
+{
+    "name": "Zaya",
+    "email": "zaya@gmail.com",
+    "mobile": "9876543210",
+    "department": "IT",
+    "designation": "Python Developer",
+    "salary": 35000,
+    "place": "Palakkad"
+}
+
+
+###
+PUT http://127.0.0.1:8000/update-employee/
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Arun",
+    "email": "arunkumar@gmail.com",
+    "mobile": "9876543215",
+    "department": "IT",
+    "designation": "Senior Python Developer",
+    "salary": 50000,
+    "place": "Kochi"
+}
